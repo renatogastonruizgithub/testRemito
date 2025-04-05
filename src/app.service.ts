@@ -9,7 +9,7 @@ export class AppService {
 
   async overwriteExcel/* (filePath: string): Promise<void> */() {
 
-    let filePath ="./remito/Book1.xlsx"
+    let filePath ="./public/remito/Book1.xlsx"
     const workbook = new ExcelJS.Workbook();
     await workbook.xlsx.readFile(filePath);
 
